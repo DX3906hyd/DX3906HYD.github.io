@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的网站</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("universe.gif") repeat;
+    }
+    
+    .star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      border-radius: 50%;
+    }
+    
+    .star-name {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="star">
+    <div class="star-name">DX3906</div>
+  </div>
+</body>
+</html>
