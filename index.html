@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("鸭鸭.jpg");
+      background-size: cover ;
+      background-repeat: repeat ;
+      background-position: center center;
+    }
+
+    #star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 250px;
+      background-image: url("3.jpg");
+      background-size: cover;
+      animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    #planet {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      background-image: url("QJ8568253977.png");
+      background-size: cover;
+      animation: blink 2s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    #text {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="star"></div>
+  <div id="planet"></div>
+  <div id="text">DX3906 for hyd</div>
+</body>
+</html>
